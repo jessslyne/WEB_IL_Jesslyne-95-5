@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #96c3fd;
+}
+
+.header img {
+    width: 100%;
+    height: 220px;     
+    object-fit: cover; 
+    display: block;
+}
+
+.navbar {
+    background-color: #8ff0f9;
+    border-top: 2px solid #5ac9d5;
+    border-bottom: 2px solid #5ac9d5;
+    padding: 0;
+}
+
+.navbar > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    border-right: 2px solid #4abdc9;
+    border-left: 2px solid #4abdc9;
+    display: block;
+    padding: 15px 25px;
+    color: #4b5c88;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #4ac7ce;
+    color: white;
+}
+
+.dropdown {
+    position: relative;  
+}
+
+.dropdown-content {
+    list-style-type: none;
+    display: none;
+    position: absolute;   
+    top: 100%;         
+    left: 0;
+    background-color: #66e0e6;
+    min-width: 220px;
+    padding: 10px 0;
+    z-index: 1000;         
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li a {
+    padding: 10px 20px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+}
+
+.dropdown-content li a:hover {
+    background-color: #4ac7ce;
+    color: white;
+}
+
+.pengalaman-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.pengalaman-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.pengalaman-header h1 {
+    font-size: 2.8rem;
+    color: #2a7a82;
+    margin-bottom: 15px;
+}
+
+.pengalaman-section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.pengalaman-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #2e3a5a;
+    text-align: justify;
+}
+
+/* Responsive Design for Pengalaman Pribadi Page */
+@media (max-width: 768px) {
+    .pengalaman-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .pengalaman-section {
+        padding: 25px;
+    }
+    
+    .pengalaman-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .pengalaman-container {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
+    
+    .pengalaman-header {
+        margin-bottom: 30px;
+    }
+    
+    .pengalaman-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .pengalaman-section {
+        padding: 20px;
+    }
+}

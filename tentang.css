@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body, html {
+    background-color: #96c3fd;
+}
+.header img {
+    width: 100%;
+    height: 220px;     
+    object-fit: cover; 
+    display: block;
+}
+.navbar {
+    background-color: #8ff0f9;
+    border-top: 2px solid #5ac9d5;
+    border-bottom: 2px solid #5ac9d5;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li a {
+    border-right: 2px solid #4abdc9;
+    border-left: 2px solid #4abdc9;
+    display: block;
+    padding: 15px 25px;
+    color: #4b5c88;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.navbar ul li a:hover {
+    background-color: #4ac7ce;
+    color: white;
+}
+.dropdown {
+    position: relative;  
+}
+.dropdown-content {
+    list-style-type: none;
+    display: none;
+    position: absolute;   
+    top: 100%;         
+    left: 0;
+    background-color: #66e0e6;
+    min-width: 220px;
+    padding: 10px 0;
+    z-index: 1000;         
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content li a {
+    padding: 10px 20px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+}
+.dropdown-content li a:hover {
+    background-color: #4ac7ce;
+    color: white;
+}
+.about-me-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    scroll-margin-top: 80px;
+}
+
+.about-me-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-me-header h1 {
+    font-size: 2.5rem;
+    color: #2a7a82;
+    margin-bottom: 10px;
+}
+
+.about-me-header p {
+    font-size: 1.2rem;
+    color: #4b5c88;
+}
+
+.about-me-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.profile-image {
+    width: 35%;
+    text-align: center;
+}
+
+.profile-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-image img:hover {
+    transform: scale(1.03);
+}
+
+.profile-data {
+    width: 65%;
+}
+
+.data-section {
+    margin-bottom: 25px;
+}
+
+.data-section h2 {
+    color: #2a7a82;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4abdc9;
+    padding-bottom: 5px;
+}
+
+.data-list {
+    list-style: none;
+    padding: 0;
+}
+
+.data-list li {
+    margin-bottom: 12px;
+    color: #4b5c88;
+    padding-left: 0;
+}
+
+.hobbies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.hobbies-list li {
+    background: linear-gradient(135deg, #4abdc9, #2a7a82);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.tujuan-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.tujuan-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tujuan-header h1 {
+    font-size: 2.8rem;
+    color: #2a7a82;
+    margin-bottom: 15px;
+}
+
+.tujuan-section {
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.tujuan-content {
+    max-width: 100%;
+}
+
+.tujuan-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #2e3a5a;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
